@@ -1,0 +1,48 @@
+import { Complaint } from "@/lib/types";
+
+export const complaints: Complaint[] = [
+  {
+    id: "cp1",
+    bookingId: "bk15",
+    customerId: "cu1",
+    providerId: "p1",
+    subject: "Electrical issue returned after repair",
+    description: "The switchboard sparking issue came back within a week of the technician's visit. Requesting a re-visit or refund.",
+    status: "in_progress",
+    createdAt: "2026-03-24T10:00:00+05:30",
+    priority: "high",
+  },
+  {
+    id: "cp2",
+    bookingId: "bk17",
+    customerId: "cu6",
+    providerId: "p14",
+    subject: "Technician did not show up",
+    description: "Booking was confirmed but the technician never arrived and stopped responding to calls.",
+    status: "resolved",
+    createdAt: "2026-02-18T14:00:00+05:30",
+    priority: "medium",
+  },
+  {
+    id: "cp3",
+    bookingId: "bk6",
+    customerId: "cu4",
+    providerId: "p8",
+    subject: "Job took longer than estimated",
+    description: "EV diagnostics quoted 2 hours but took over 4 hours, delaying our delivery schedule.",
+    status: "open",
+    createdAt: "2026-08-28T19:00:00+05:30",
+    priority: "low",
+  },
+  {
+    id: "cp4",
+    bookingId: "bk14",
+    customerId: "cu3",
+    providerId: "p6",
+    subject: "Booking cancelled without notice",
+    description: "Provider cancelled the scheduled servicing an hour before the slot with no alternative offered.",
+    status: "open",
+    createdAt: "2026-04-01T18:00:00+05:30",
+    priority: "medium",
+  },
+];

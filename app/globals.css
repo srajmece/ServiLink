@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #10151f;
+  --surface: #ffffff;
+  --surface-muted: #eef1f5;
+  --border: #e2e5eb;
+
+  --brand-50: #eef3ff;
+  --brand-100: #dbe6ff;
+  --brand-200: #b8ccff;
+  --brand-300: #8aa9ff;
+  --brand-400: #5c82ff;
+  --brand-500: #3660fa;
+  --brand-600: #2245e0;
+  --brand-700: #1a35b3;
+  --brand-800: #182c8c;
+  --brand-900: #172869;
+
+  --success-50: #ecfdf3;
+  --success-500: #16a34a;
+  --success-600: #15803d;
+  --warning-50: #fffbeb;
+  --warning-500: #d97706;
+  --warning-600: #b45309;
+  --danger-50: #fef2f2;
+  --danger-500: #dc2626;
+  --danger-600: #b91c1c;
+  --info-50: #eff9ff;
+  --info-500: #0ea5e9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+
+  --color-success-50: var(--success-50);
+  --color-success-500: var(--success-500);
+  --color-success-600: var(--success-600);
+  --color-warning-50: var(--warning-50);
+  --color-warning-500: var(--warning-500);
+  --color-warning-600: var(--warning-600);
+  --color-danger-50: var(--danger-50);
+  --color-danger-500: var(--danger-500);
+  --color-danger-600: var(--danger-600);
+  --color-info-50: var(--info-50);
+  --color-info-500: var(--info-500);
+
+  --font-sans: var(--font-inter);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+::selection {
+  background: var(--brand-200);
+}
+
+/* Utility: hide scrollbar for horizontally-scrolling chip/card rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
